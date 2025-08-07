@@ -8,4 +8,5 @@ Material del curso de Posgrado de Estadistica de investigacion cientifica DCMRN
   + crear repositorio :dart: 
   + sincronizar nube y computadora 
   + Credenciales Git
-  + tory
+  + primer dia de clases 
+  + 9:20 a 1:20 
