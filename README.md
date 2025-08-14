@@ -10,3 +10,5 @@ Material del curso de Posgrado de Estadistica de investigacion cientifica DCMRN
   + Credenciales Git
   + primer dia de clases 
   + 9:20 a 1:20 
+
+SEGUNDA SEMANA DE CLASES 
