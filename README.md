@@ -18,5 +18,5 @@ C:\Usuarios\Usuario>git config --global usuario.email "toryferrer@live.com"
 
 **Semana 2 (14/08/2025)**
 
-Laboratorio 1
-Conocer la inferaz de RStudio
+  + Laboratorio 1
+  + Conocer la inferaz de RStudio
