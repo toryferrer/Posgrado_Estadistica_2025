@@ -20,3 +20,4 @@ Forma Sincoronizar nube y computadora
 
   + Laboratorio 1
   + Conocer la inferaz de RStudio
+  + Analisis temperatura
