@@ -13,8 +13,8 @@ Material del curso de Posgrado de Estadistica de investigacion cientifica DCMRN
 
 Forma Sincoronizar nube y computadora
 
-C:\Usuarios\Usuario>git config --global usuario.nombre "toryferrer"
-C:\Usuarios\Usuario>git config --global usuario.email "toryferrer@live.com"
+  + C:\Usuarios\Usuario>git config --global usuario.nombre "toryferrer"
+  + C:\Usuarios\Usuario>git config --global usuario.email "toryferrer@live.com"
 
 **Semana 2 (14/08/2025)**
 
