@@ -11,4 +11,12 @@ Material del curso de Posgrado de Estadistica de investigacion cientifica DCMRN
   + primer dia de clases 
   + 9:20 a 1:20 
 
-SEGUNDA SEMANA DE CLASES 
+Forma Sincoronizar nube y computadora
+
+C:\Usuarios\Usuario>git config --global usuario.nombre "toryferrer"
+C:\Usuarios\Usuario>git config --global usuario.email "toryferrer@live.com"
+
+**Semana 2 (14/08/2025)**
+
+Laboratorio 1
+Conocer la inferaz de RStudio
