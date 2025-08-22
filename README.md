@@ -21,3 +21,7 @@ Forma Sincoronizar nube y computadora
   + Laboratorio 1
   + Conocer la inferaz de RStudio
   + Analisis temperatura
+  
+ **Semana 3 (21/08/2025)**
+
+Continuamos con el Laboratorio 1, en el cual analizamos una base de datos de temperatura. Para ello, importamos los datos directamente desde una URL.
