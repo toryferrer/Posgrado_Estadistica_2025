@@ -1,4 +1,7 @@
 # EJERCICIO 1
+#**Luis Miguel Toribio Ferrer**
+#**14/08/2025 y 21/08/2025**  
+
 
 temperatura <- read.csv("C:/Users/Tory Ferrer/OneDrive/CHINO (TORY)/ING. LUIS MIGUEL TORIBIO FERRER/DOCTORADO/CLASES/ESTADISTICAS EN LA INVESTIGACION CIENTIFICA/Posgrado_Estadistica_2025/temperatura.csv")
 temperatura
