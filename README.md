@@ -34,7 +34,6 @@ Continuamos con el Laboratorio 1, en el cual analizamos una base de datos de tem
   + Estadísticos descriptivos: Cálculo de medias, desviaciones estándar y varianzas del Índice de Esbeltez (IE) por tratamiento.
   + Visualización gráfica: Elaboración de diagramas de caja (boxplots) para comparar el IE entre tratamientos y verificar diferencias visuales.
   + Evaluación de supuestos:
-
     + Pruebas de normalidad (Shapiro–Wilk) y gráficos QQ-plot para cada tratamiento.
     + Prueba de homogeneidad de varianzas (F-test).
   + Pruebas de hipótesis: Aplicación de pruebas t (Student y Welch) tanto de dos colas como de una cola, según la hipótesis planteada.
