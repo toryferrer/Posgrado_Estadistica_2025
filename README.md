@@ -16,16 +16,18 @@ Forma Sincoronizar nube y computadora
   + C:\Usuarios\Usuario>git config --global usuario.nombre "toryferrer"
   + C:\Usuarios\Usuario>git config --global usuario.email "toryferrer@live.com"
 
-**Semana 2 (14/08/2025)**
-
-  + Laboratorio 1
-  + Conocer la inferaz de RStudio
-  + Analisis temperatura
-  
+**Semana 2 (14/08/2025)** 
+  + Carga y exploración de datos (temperatura.csv; revisión de estructura, dimensiones y resumen estadístico).
+  + Preparación de variables (renombrado de columnas y cálculo de la media anual a partir de los meses).
+  + Visualización:
+    + Boxplot general (2000–2021) con colores por estación.
+    + Boxplot por periodo (2010–2020) para observar variación reciente.
+  + Exportación de resultados (guardar archivo procesado como temp_final.csv).
+ 
  **Semana 3 (21/08/2025)**
-
-Continuamos con el Laboratorio 1, en el cual analizamos una base de datos de temperatura. Para ello, importamos los datos directamente desde una URL.
-
+  + Importación local: Lectura de Act_Inv_Movilizacion.csv dentro del proyecto en R.
+  + Importación en línea: Conexión a un archivo CSV disponible en un servidor (senasica) mediante URL.
+  + Exploración inicial: Visualización de la base con View(), head() y selección de columnas/filas para revisión preliminar.
 
 **Semana 4 (28/08/25)**
 
