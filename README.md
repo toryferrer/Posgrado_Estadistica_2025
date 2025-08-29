@@ -30,7 +30,6 @@ Forma Sincoronizar nube y computadora
   + Exploración inicial: Visualización de la base con View(), head() y selección de columnas/filas para revisión preliminar.
 
 **Semana 4 (28/08/25)**
-
   + Carga de datos: Importación de la base calidad_plantulas.csv en R.
   + Preparación de variables: Conversión de la columna Tratamiento a factor para facilitar los análisis estadísticos.
   + Estadísticos descriptivos: Cálculo de medias, desviaciones estándar y varianzas del Índice de Esbeltez (IE) por tratamiento.
