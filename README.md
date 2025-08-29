@@ -16,7 +16,7 @@ Forma Sincoronizar nube y computadora
   + C:\Usuarios\Usuario>git config --global usuario.nombre "toryferrer"
   + C:\Usuarios\Usuario>git config --global usuario.email "toryferrer@live.com"
 
-**Semana 2 (14/08/2025)** 
+**Semana 2 (14/08/2025)** [Clase 02](https://github.com/toryferrer/Posgrado_Estadistica_2025/tree/TESIS_MEZQUITE/CLASES/SEMANA%202)
   + Carga y exploración de datos (temperatura.csv; revisión de estructura, dimensiones y resumen estadístico).
   + Preparación de variables (renombrado de columnas y cálculo de la media anual a partir de los meses).
   + Visualización:
