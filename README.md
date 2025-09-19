@@ -39,7 +39,21 @@ Forma Sincoronizar nube y computadora
   + Pruebas de hipótesis: Aplicación de pruebas t (Student y Welch) tanto de dos colas como de una cola, según la hipótesis planteada.
   + Medición del tamaño del efecto: Creación de una función en R para calcular el d de Cohen, con el fin de complementar el análisis de significancia estadística y cuantificar la magnitud de las diferencias observadas entre tratamientos.
   
-  
+**Semana 5 (04/09/2025)** [Clase 05](https://github.com/toryferrer/Posgrado_Estadistica_2025/tree/TESIS_MEZQUITE/SCRIPTS/SEMANA%205)
+Tema: Media móvil y prueba t de muestras dependientes
+
++ Cálculo de la media móvil en la especie setosa (iris) para determinar el tamaño de muestra ideal.
++ Gráfica de la media móvil y comparación con la media poblacional.
++ Análisis de la producción de semilla (2012 vs 2013) con prueba t:
+
+  + Boxplot comparativo y cálculo de medias.
+  + Prueba t pareada para contrastar hipótesis.
+
+Resultado: no hubo diferencias significativas entre los años evaluados.
+
+
+**Semana 6 (11/09/25)**
+
   
 **Semana 7 (18/09/25)** [Clase 07](https://github.com/toryferrer/Posgrado_Estadistica_2025/tree/TESIS_MEZQUITE/SCRIPTS/SEMANA%207)
 + Importación de la base crop.data.csv desde GitHub.
