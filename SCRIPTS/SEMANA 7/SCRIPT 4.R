@@ -4,6 +4,7 @@
 # 18/09/2025
 # LUIS MIGUEL TORIBIO FERRER
 # SEMANA 7
+# SCRIPT 4
 # ===============================
 
 url <- "https://raw.githubusercontent.com/mgtagle/Posgrado_Estadistica_2025/refs/heads/main/crop.data.csv"
@@ -80,3 +81,6 @@ ggplot(crop, aes(x=fertilizer, y = yield, fill = fertilizer))+
   theme_light()+
   labs(x = "Fertilizante",
        y = "Rerndimiento (ton/ha)")
+
+
+
