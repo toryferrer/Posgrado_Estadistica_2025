@@ -58,7 +58,6 @@ Resultado: no hubo diferencias significativas entre los años evaluados.
 **Semana 7 (18/09/25)** [Clase 07](https://github.com/toryferrer/Posgrado_Estadistica_2025/tree/TESIS_MEZQUITE/SCRIPTS/SEMANA%207)
 + Importación de la base crop.data.csv desde GitHub.
 + Preparación de datos: conversión de fertilizer, block y density a factores.
-
 + Visualización exploratoria:
 
   + Boxplot de rendimiento por fertilizante.
