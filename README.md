@@ -38,3 +38,28 @@ Forma Sincoronizar nube y computadora
     + Prueba de homogeneidad de varianzas (F-test).
   + Pruebas de hipótesis: Aplicación de pruebas t (Student y Welch) tanto de dos colas como de una cola, según la hipótesis planteada.
   + Medición del tamaño del efecto: Creación de una función en R para calcular el d de Cohen, con el fin de complementar el análisis de significancia estadística y cuantificar la magnitud de las diferencias observadas entre tratamientos.
+  
+  
+  
+**Semana 7 (18/09/25)** [Clase 07](https://github.com/toryferrer/Posgrado_Estadistica_2025/tree/TESIS_MEZQUITE/SCRIPTS/SEMANA%207)
++ Importación de la base crop.data.csv desde GitHub.
++ Preparación de datos: conversión de fertilizer, block y density a factores.
+
++ Visualización exploratoria:
+
+  + Boxplot de rendimiento por fertilizante.
+  + Violin plots (paquete vioplot) para comparar la distribución de la producción.
+  + Gráfica avanzada en ggplot2 combinando violín, boxplot y puntos dispersos (jitter).
+
++ Cálculo de estadísticos descriptivos (media y varianza del rendimiento por fertilizante).
++ Verificación de supuestos del ANOVA:
+
+  + Pruebas de normalidad (Shapiro–Wilk) por tratamiento.
+  + Prueba de homogeneidad de varianzas (Bartlett).
+  + Análisis de varianza de un factor (yield ~ fertilizer).
+
+Comparaciones múltiples:
+
+  + LSD (Least Significant Difference): cálculo del valor crítico y diferencias de medias.
+  + Tukey HSD: aplicación y representación gráfica de resultados.
+  + Interpretación de diferencias significativas en la productividad de cultivos según el fertilizante aplicado.
