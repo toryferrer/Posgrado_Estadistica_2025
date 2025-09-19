@@ -2,6 +2,8 @@
 # Análisis de varianza
 # Productividad de cultivos
 # 18/09/2025
+# LUIS MIGUEL TORIBIO FERRER
+# SEMANA 7
 # ===============================
 
 url <- "https://raw.githubusercontent.com/mgtagle/Posgrado_Estadistica_2025/refs/heads/main/crop.data.csv"
@@ -17,6 +19,15 @@ boxplot(crop$yield ~ crop$fertilizer,
         col = colores,
         xlab = "Fertilizantes",
         ylab = "Rendimiento (ton/ha)")
+
+library(vioplot)
+vioplot(crop$yield ~ crop$fertilizer,
+        main = "Producción por fertilizante",
+        col= c("red2","blue2", "green2"),
+        ylab = "Producción",
+        xlab = "Tipo de fertilizante",
+        ylim = c(175, 179))
+
 
 tapply(crop$yield, crop$fertilizer, mean)
 tapply(crop$yield, crop$fertilizer, var)
@@ -55,7 +66,7 @@ tapply(crop$yield, crop$fertilizer, mean)
 
 # Prueba de Tukey
 
-sqrt((2*0.3859)/32) * qtukey(0.95, nmeans = 3, df = 93)
+sqrt((0.3859)/32) * qtukey(0.95, nmeans = 3, df = 93)
 
 TukeyHSD(crop.aov, )
 plot(TukeyHSD(crop.aov))
