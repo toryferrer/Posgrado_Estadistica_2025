@@ -160,12 +160,81 @@ q_crit <- qtukey(0.95, nmeans = k, df = glerror)
 q_crit
 
 
-# alcule la diferencia mínima signicativa con Tukey.
+# Calcule la diferencia mínima signicativa con Tukey.
 
 # 2) Diferencia mínima significativa (HSD)
 HSD <- q_crit * sqrt(MSerror / n)
 HSD
 
 
+# Compare los resultados con la prueba LSD: ¾los mismos pares resultan signicativos?
+
+pairs <- combn(names(medias), 2, simplify = FALSE)
+
+# --- LSD ---
+# Umbral LSD (puedes usar el que ya calculaste o recalcular aquí)
+MSerror <- summary(modelo)[[1]]["Residuals","Mean Sq"]
+glerror <- summary(modelo)[[1]]["Residuals","Df"]
+n <- 6
+tcrit <- qt(1-0.05/2, df = glerror)
+LSD_thr <- as.numeric(tcrit * sqrt((2*MSerror)/n))
+
+# --- Tukey ---
+tuk <- TukeyHSD(modelo)$Sitio  # matriz con diff, lwr, upr, p adj
+
+# Construir tabla comparativa
+comp <- do.call(rbind, lapply(pairs, function(par){
+  g1 <- par[1]; g2 <- par[2]
+  # diferencia absoluta de medias
+  d  <- abs(medias[g1] - medias[g2])
+  
+  # Significancia por LSD
+  sig_LSD <- as.logical(d > LSD_thr)
+  
+  # Buscar fila correspondiente en la tabla de Tukey (orden "g1-g2" o "g2-g1")
+  rn1 <- paste(g1, g2, sep="-")
+  rn2 <- paste(g2, g1, sep="-")
+  p_tuk <- if (rn1 %in% rownames(tuk)) tuk[rn1, "p adj"] else tuk[rn2, "p adj"]
+  
+  data.frame(
+    Par = paste(g1, "vs", g2),
+    Media_g1 = round(medias[g1], 3),
+    Media_g2 = round(medias[g2], 3),
+    Dif_abs  = round(as.numeric(d), 3),
+    LSD_thr  = round(LSD_thr, 3),
+    Sig_LSD  = ifelse(sig_LSD, "Sí", "No"),
+    p_Tukey  = round(as.numeric(p_tuk), 4),
+    Sig_Tukey = ifelse(p_tuk < 0.05, "Sí", "No"),
+    Coinciden = ifelse(sig_LSD == (p_tuk < 0.05), "Sí", "No")
+  )
+}))
+
+# Mostrar tabla completa
+comp
+
+# Pairs donde difieren los métodos (útil para el informe)
+subset(comp, Coinciden == "No")
 
 
+
+#Diferencia clave: la prueba LSD detectó significativa la diferencia entre Beaver Lake y Angler’s Cove (diferencia = 3.85, mayor que LSD = 3.72), mientras que la prueba Tukey HSD no la consideró significativa (p = 0.2376, HSD = 5.30).
+
+#En conclusión, los pares no son exactamente los mismos: Tukey HSD es más conservadora que la prueba LSD y, por ello, reporta un número menor de diferencias significativas.
+
+
+# Interpretacion ----------------------------------------------------------
+
+
+#¿Qué cuerpo de agua presenta las concentraciones más altas?
+
+
+# El análisis mostró que Rock River presentó las concentraciones medias de estroncio más elevadas (≈ 58.3 mg/ml), siendo significativamente superiores a las registradas en los demás cuerpos de agua.
+
+# ¿Qué sitios no difieren entre sí?
+
+# Los análisis post-hoc mostraron que Beaver Lake, Angler’s Cove y Appletree Lake no presentan diferencias significativas entre sí, ya que sus concentraciones medias de estroncio son estadísticamente similares.
+
+
+# Desde el punto de vista ambiental, ¿qué implicaciones podrían tener estas diferencias en la calidad del agua?
+
+# Desde el punto de vista ambiental, las diferencias encontradas en las concentraciones de estroncio implican que Rock River podría estar expuesto a mayores niveles de contaminación, lo que representa un riesgo potencial para la salud de los ecosistemas acuáticos y de las poblaciones humanas o animales que hagan uso de esta agua. Por el contrario, Grayson’s Pond, al mostrar los niveles más bajos, reflejaría condiciones más cercanas a la naturalidad o menor impacto antrópico. Los valores intermedios registrados en Beaver Lake, Angler’s Cove y Appletree Lake sugieren que estos cuerpos de agua se encuentran en un estado de calidad similar, posiblemente con presiones ambientales moderadas. Estas diferencias son relevantes porque permiten identificar sitios prioritarios para monitoreo y gestión ambiental, orientando acciones de control de contaminantes y conservación de la calidad del agua.
