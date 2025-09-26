@@ -82,10 +82,9 @@ Comparaciones múltiples:
   
 **Semana 8 (25/09/25)** [Clase 08](https://github.com/toryferrer/Posgrado_Estadistica_2025/tree/TESIS_MEZQUITE/SCRIPTS/SEMANA%208)
   
-  
-Construcción de la base de datos (variables trigo y harina).
-Cálculo manual de parámetros por mínimos cuadrados (B0 y B1).
-Ajuste del modelo de regresión lineal simple.
-Evaluación del modelo mediante ANOVA y prueba de significancia.
-Verificación de supuestos: análisis de residuos y prueba de homocedasticidad (Breusch–Pagan).
-Cálculo de indicadores de ajuste: R², SSE, varianza y desviación estándar residual.
++ Construcción de la base de datos (variables trigo y harina).
++ Cálculo manual de parámetros por mínimos cuadrados (B0 y B1).
++ Ajuste del modelo de regresión lineal simple.
++ Evaluación del modelo mediante ANOVA y prueba de significancia.
++ Verificación de supuestos: análisis de residuos y prueba de homocedasticidad (Breusch–Pagan).
++ Cálculo de indicadores de ajuste: R², SSE, varianza y desviación estándar residual.
