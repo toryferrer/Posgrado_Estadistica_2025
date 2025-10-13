@@ -88,3 +88,9 @@ Comparaciones múltiples:
 + Evaluación del modelo mediante ANOVA y prueba de significancia.
 + Verificación de supuestos: análisis de residuos y prueba de homocedasticidad (Breusch–Pagan).
 + Cálculo de indicadores de ajuste: R², SSE, varianza y desviación estándar residual.
+
+<img width="901" height="675" alt="image" src="https://github.com/user-attachments/assets/8d658530-5792-4638-bd3b-e82aa9e6cb1f" />
+
+
+
+
